@@ -4,7 +4,57 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Rock Paper Scissors</title>
-		<script type="module" src="main.js"></script>
+		<link rel="stylesheet" href="style.css" />
+		<script src="main.js" defer></script>
 	</head>
-	<body></body>
+	<body>
+		<header>
+			<h1>Rock, Paper, Scissors</h1>
+		</header>
+		<section class="winner-row">
+			<h2>Pick, NOW!</h2>
+		</section>
+		<main>
+			<section class="button-row">
+				<div class="tile">
+					<div class="tile-text">
+						<h2>Rock</h2>
+						<p>Good ol' Rock, never lets you down.</p>
+					</div>
+					<button id="rock">ROCK</button>
+				</div>
+				<div class="tile">
+					<div class="tile-text">
+						<h2>Paper</h2>
+						<p>The choice for cowards.</p>
+					</div>
+					<button id="paper">PAPER</button>
+				</div>
+				<div class="tile">
+					<div class="tile-text">
+						<h2>Scissors</h2>
+						<p>Stabba, stabba, stab stab stab!</p>
+					</div>
+					<button id="scissors">SCISSORS</button>
+				</div>
+			</section>
+			<div class="scoreboard">
+				<h2>Scoreboard</h2>
+			</div>
+			<section class="scoreTileRow">
+				<div class="scoreTile">
+					<h2>Player</h2>
+					<h2 id="playerScore">0</h2>
+				</div>
+				<div class="scoreTile">
+					<h2>Winner:</h2>
+					<h2 id="winner"></h2>
+				</div>
+				<div class="scoreTile">
+					<h2>Computer</h2>
+					<h2 id="computer">0</h2>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>
